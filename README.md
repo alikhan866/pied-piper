@@ -35,3 +35,7 @@ If the answer to all or any of the questions been yes then here's pied piper. Th
 
 ## Roadmap
 
+## Deploy Pied-Piper to AWS
+
+check https://github.com/alikhan866/pied-piper/blob/master/DEPLOY_LAMBDA.md 
+
