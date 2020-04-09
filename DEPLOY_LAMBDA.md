@@ -11,7 +11,7 @@ Open Pied-Piper using `Eclipse-IDE` like shown below which will automatically do
 ![](images/deployToLambda/Step-2.PNG)
 
 ### Step-3
-Download `AWS-toolkit` for `Eclipse-IDE` , Navigate to preferences then, Enter your `Access-Key` and `Secret-Access-key`
+Install `AWS-toolkit` for `Eclipse-IDE` from the `Eclipse-Marketplace` , Navigate to preferences then, Enter your `Access-Key` and `Secret-Access-key`
 
 After all of the dependencies have been installed successfully navigate to `com.github.piedpiper.lambda` under `src/main/java` and upload function to `AWS-Lambda` like shown below
 
