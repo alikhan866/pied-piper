@@ -23,7 +23,7 @@ Name the resource as shown and tick `Enable API Gateway CORS`
 ![](images/deployToAPIGateway/Step-4.PNG)
 
 ### Step-5
-Enabling `API Gateway CORS` will automatically create an `Options` method for you but it allows all methods by default so we need to navigate inside `Integration Response` and allow only `PUT` for this case
+Enabling `API Gateway CORS` will automatically create an `Options` method for us but it allows all methods by default so we need to navigate inside `Integration Response` and allow only `PUT` for this case
 
 ![](images/deployToAPIGateway/Step-5.PNG)
 
@@ -33,7 +33,7 @@ Edit the `Access-Control-Allow-Methods` field as shown under `/graph`
 ![](images/deployToAPIGateway/Step-6.PNG)
 
 ### Step-7
-Under `/graph` create two more resources `/run` and `/search` with `API Gateway CORS` enabled, Then edit the `Access-Control-Allow-Methods` of both `/run` and `/search` to allow `PUT` as shown below
+Under `/graph` create two more resources `/run` and `/search` with `API Gateway CORS` enabled, Then edit the `Access-Control-Allow-Methods` of both `/run` and `/search` to allow `POST` as shown below
 
 ![](images/deployToAPIGateway/Step-7.PNG)
 
@@ -58,13 +58,37 @@ Under the `PUT` method select the `SaveGraphLambdaFunction` Lambda function whic
 ![](images/deployToAPIGateway/Step-11.PNG)
 
 ### Step-12
-Follow the same procedures as shown in `Step-9 to Step-11` and create a `POST` method for `/run` and `/search` , Then create a `GET` method for `/nodetypes` so your final structure looks like as shown below, After that head over to `Integration Response`
+Follow the same procedures as shown in `Step-9 to Step-11` and create a `POST` method for `/run` and `/search` , Then create a `GET` method for `/nodetypes`, Corresponding Lambda function to use in each method is given below
+
+`/graph` `PUT` : `SaveGraphLambdaFunction`
+
+
+`/run` `POST` : `ExecuteGraphLambdaFunction`
+
+
+`/search` `POST` : `SearchGraphLambdaFunction`
+
+
+`/nodetypes` `GET` : `GetNodesTypesLambdaFunction.java`
+
+
+After configuring all the methods our final structure looks like as shown below, After that head over to `Integration Response`
 
 ![](images/deployToAPIGateway/Step-12.PNG)
 
 ### Step-13
-Go to each `Method` and under `Integration Response` edit the `Access-Control-Allow-Methods` to allow `PUT` method for `/graph`
-`POST` for `/run` and `/search` , `GET` for `/nodetypes`
+Go to each `Method` and under `Integration Response` edit the `Access-Control-Allow-Methods` to allow 
+
+
+`PUT` method for `/graph`
+
+
+`POST` method for `/run` and `/search` 
+
+
+`GET` method for `/nodetypes`
+
+
 ![](images/deployToAPIGateway/Step-13.PNG)
 
 ### Step-14
