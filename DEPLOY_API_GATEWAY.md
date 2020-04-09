@@ -5,3 +5,4 @@ This is a second part of the tutorial deploying `Pied-Piper` to `AWS-Lambda` and
 ### Step-1
 
 
+![](images/deployToAPIGateway/Step-1.PNG)
