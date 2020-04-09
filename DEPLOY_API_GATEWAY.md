@@ -69,7 +69,7 @@ Follow the same procedures as shown in `Step-9 to Step-11` and create a `POST` m
 `/search` `POST` : `SearchGraphLambdaFunction`
 
 
-`/nodetypes` `GET` : `GetNodesTypesLambdaFunction.java`
+`/nodetypes` `GET` : `GetNodesTypesLambdaFunction`
 
 
 After configuring all the methods our final structure looks like as shown below, After that head over to `Integration Response`
