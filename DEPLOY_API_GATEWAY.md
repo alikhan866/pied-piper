@@ -102,6 +102,10 @@ Edit the `Method Response` of each `Method` as given below
 
 ![](images/deployToAPIGateway/Step-15.PNG)
 
+### Step-16 
+
+Go to actions and select `Deploy API`
+
 ### Note 
 
 It is important to configure `API Gateway` exactly as shown in this guide, If you are having problems go through the guide thoroughly, And if still there is some error create an issue about it in Github
