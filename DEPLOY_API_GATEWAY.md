@@ -76,7 +76,19 @@ After configuring all the methods our final structure looks like as shown below,
 
 ![](images/deployToAPIGateway/Step-12.PNG)
 
+
 ### Step-13
+Go to `Method Response` of each `Method` as shown below
+
+![](images/deployToAPIGateway/Step-14.PNG)
+
+### Step-14
+
+Edit the `Method Response` of each `Method` as given below
+
+![](images/deployToAPIGateway/Step-15.PNG)
+
+### Step-15
 Go to each `Method` and under `Integration Response` edit the `Access-Control-Allow-Methods` to allow 
 
 
@@ -91,16 +103,6 @@ Go to each `Method` and under `Integration Response` edit the `Access-Control-Al
 
 ![](images/deployToAPIGateway/Step-13.PNG)
 
-### Step-14
-Go to `Method Response` of each `Method` as shown below
-
-![](images/deployToAPIGateway/Step-14.PNG)
-
-### Step-15
-
-Edit the `Method Response` of each `Method` as given below
-
-![](images/deployToAPIGateway/Step-15.PNG)
 
 ### Step-16 
 
