@@ -1,4 +1,4 @@
-# How to deploy Pied-Piper to AWS-Lambda
+# How to deploy Pied-Piper to AWS-Lambda (Part-1)
 
 ### Step-1
 Go to https://github.com/thehellmaker/pied-piper and download or clone `Pied-Piper` to your local repository
@@ -37,3 +37,9 @@ If you don't have a bucket you can go to the `AWS-Console` and create one
 ### Step-6
 
 Repeat `Step-4` and `Step-5` for all other functions inside `com.github.piedpiper.lambda` under `src/main/java` 
+
+### Step-7 
+
+We are done with the lambda setup after we upload all the functions to Lambda, Now we need to use API gateway to make calls to our Lambda functions for that follow the guide : 
+
+https://github.com/alikhan866/pied-piper/blob/master/DEPLOY_API_GATEWAY.md
