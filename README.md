@@ -37,5 +37,11 @@ If the answer to all or any of the questions been yes then here's pied piper. Th
 
 ## Deploy Pied-Piper to AWS
 
-check https://github.com/alikhan866/pied-piper/blob/master/DEPLOY_LAMBDA.md 
+### Part-1
+
+https://github.com/alikhan866/pied-piper/blob/master/DEPLOY_LAMBDA.md 
+
+### Part-2
+
+https://github.com/alikhan866/pied-piper/blob/master/DEPLOY_API_GATEWAY.md
 
